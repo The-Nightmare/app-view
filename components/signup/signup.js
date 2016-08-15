@@ -1,7 +1,7 @@
 "use strict";
 
 angular
-  .module('todo-angular.signup',[
-    'todo-angular.signup.signup-directive',
-    'todo-angular.signup.signup-service'
+  .module('nightmare.signup',[
+    'nightmare.signup.signup-directive',
+    'nightmare.signup.signup-service'
 ]);
