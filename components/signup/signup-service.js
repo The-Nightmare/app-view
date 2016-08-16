@@ -17,7 +17,7 @@ angular
         password: password
       },
 
-      url: 'http://localhost:8080/auth/signup'
+      url: 'http://localhost:3000/auth/signup'
     }).then(function successCallback(response) {
         console.log('win', response);
         loginService.loginUser(userName, password);
