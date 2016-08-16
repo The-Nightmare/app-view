@@ -26,11 +26,12 @@
           userName: userName,
           password: password
         },
-        url: 'https://thenightmarespringserver.herokuapp.com/player'
+        // url: 'https://thenightmarespringserver.herokuapp.com/player'
+        url: 'http://localhost:3000/auth/login'
       }).then(function successCallback(response){
         console.log(response);
         _setUserData(response.data);
-        $location.path('/list');
+        $location.path('/dashboard');
       }, function errorCallback(err){
         console.log(err);
       });
