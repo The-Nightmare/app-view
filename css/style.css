@@ -1,0 +1,9 @@
+/*<----General------>*/
+
+
+/*<----Landing Page------>*/
+html.ng-scope #modalRow {
+  display: flex;
+  justify-content: center;
+
+}

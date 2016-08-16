@@ -26,7 +26,7 @@
           userName: userName,
           password: password
         },
-        url: 'http://localhost:3000/auth/login'
+        url: 'https://thenightmarespringserver.herokuapp.com/player'
       }).then(function successCallback(response){
         console.log(response);
         _setUserData(response.data);
