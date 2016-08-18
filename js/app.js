@@ -23,3 +23,10 @@
   });
 
 })();
+
+function setHighScore(highscore){
+ console.log('settign high score', highscore);
+
+ // Application.ExternalCall ("setHighScore", playerscore ); in unity on game over add this in
+
+}
