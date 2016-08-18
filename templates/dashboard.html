@@ -1,0 +1,13 @@
+<game-canvas> </game-canvas>
+
+
+  <div ng-repeat='score in scoreData | filter:highScore '>
+    <div class="">
+    <h5>{{score.userName}}:</h5>{{score.highScore }}
+    </div>
+    <!-- <div ng-model="max">
+      {{score.highScore }}
+    </div> -->
+
+
+</div>

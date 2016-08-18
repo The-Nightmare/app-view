@@ -1,0 +1,26 @@
+<!-- <link rel="stylesheet" href="TemplateData/style.css"> -->
+<script src="TemplateData/UnityProgress.js"></script>
+
+  <div class="template">
+
+<center>
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+      <br>
+      <div class="logo"></div>
+    </div>
+  </center>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Development/myGame.data",
+    codeUrl: "Development/myGame.js",
+    memUrl: "Development/myGame.mem",
+
+  };
+</script>
+<script src="Development/UnityLoader.js"></script>
+
+  </div>
