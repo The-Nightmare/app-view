@@ -21,7 +21,6 @@
           url: 'http://localhost:3000/api'
 
         }).then(function successCallback(response) {
-          // console.log(response.data.score);
            deferred.resolve(response.data.score);
         }, function errorCallback(err) {
           deferred.reject(err);
@@ -39,12 +38,10 @@
           },
           url: 'http://localhost:3000/api/' + loginService.getUserId()
         }).then(function successCallback(response) {
-          console.log(response.data);
           deferred.resolve(response.data);
         }, function errorCallback(err) {
           deferred.reject(err);
         });
-        console.log();
           return deferred.promise;
         }
 

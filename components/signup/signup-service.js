@@ -9,7 +9,6 @@ angular
       createUser: createUser
     };
   function createUser(userName, password) {
-    console.log(userName,password);
     $http({
       method: 'post',
       params: {
@@ -22,8 +21,8 @@ angular
     }).then(function successCallback(response) {
         console.log('win', response);
         loginService.loginUser(userName, password);
-      }, function errorCallback(response) {
-        console.log('HEY THIS ISNT WORKING');
+      }, function errorCallback(err) {
+        console.log('HEY THIS ISNT WORKING', err);
       });
 
     }

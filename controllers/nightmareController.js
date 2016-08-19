@@ -23,7 +23,6 @@
       function _userData(){
         canvasService.getUserData().then(function(response){
           $scope.userInfo = response.user[0].userName;
-          console.log($scope.userInfo);
         });
 
       }
