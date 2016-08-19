@@ -12,6 +12,7 @@
 
       _init = function(){
         _getHighScore();
+        _userData();
       };
 
       function _getHighScore(){
@@ -19,7 +20,11 @@
           $scope.scoreData = response;
         });
       }
-      function _orderByMax(){
+      function _userData(){
+        canvasService.getUserData().then(function(response){
+          $scope.userInfo = response.user[0].userName;
+          console.log($scope.userInfo);
+        });
 
       }
       _init();

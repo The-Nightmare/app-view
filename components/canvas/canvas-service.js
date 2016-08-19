@@ -7,7 +7,8 @@
       var user = {};
       var deferred = $q.defer();
       return {
-     getScore: getScore
+     getScore: getScore,
+     getUserData: getUserData
       };
       function getScore(){
         $http({
@@ -27,8 +28,25 @@
         });
           return deferred.promise;
       }
+      function getUserData(){
+        var deferred = $q.defer();
 
+        $http({
+          method: 'get',
 
+          headers: {
+            Authorization: 'Bearer ' + loginService.getToken()
+          },
+          url: 'http://localhost:3000/api/' + loginService.getUserId()
+        }).then(function successCallback(response) {
+          console.log(response.data);
+          deferred.resolve(response.data);
+        }, function errorCallback(err) {
+          deferred.reject(err);
+        });
+        console.log();
+          return deferred.promise;
+        }
 
   }
 })();
