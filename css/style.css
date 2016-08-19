@@ -7,3 +7,9 @@ html.ng-scope #modalRow {
   justify-content: center;
 
 }
+.lean-overlay{
+ position: relative !important;
+ display: none !important;
+}
+
+/*<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="900" width="1200"></canvas>*/

@@ -3489,8 +3489,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'myGame.data';
-    var REMOTE_PACKAGE_BASE = 'myGame.data';
+    var PACKAGE_NAME = 'NightmareFleshStackBuild-local.data';
+    var REMOTE_PACKAGE_BASE = 'NightmareFleshStackBuild-local.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       Module.printErr('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -3499,8 +3499,8 @@ Module.expectedDataFileDownloads++;
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
   
-      var REMOTE_PACKAGE_SIZE = 14617424;
-      var PACKAGE_UUID = 'b182acd2-6385-499a-83c2-f9fe5a6c454f';
+      var REMOTE_PACKAGE_SIZE = 14751318;
+      var PACKAGE_UUID = 'abfeecbe-9e08-4806-bb92-e060ef325b46';
     
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -3604,12 +3604,12 @@ Module['FS_createPath']('/Managed/mono', '2.0', true, true);
       },
     };
 
-      new DataRequest(0, 11746023, 0, 0).open('GET', '/data.unity3d');
-    new DataRequest(11746023, 11746042, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
-    new DataRequest(11746042, 11752275, 0, 0).open('GET', '/preserved_derived_types.xml');
-    new DataRequest(11752275, 13714827, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
-    new DataRequest(13714827, 14589799, 0, 0).open('GET', '/Resources/unity_default_resources');
-    new DataRequest(14589799, 14617424, 0, 0).open('GET', '/Managed/mono/2.0/machine.config');
+      new DataRequest(0, 11876268, 0, 0).open('GET', '/data.unity3d');
+    new DataRequest(11876268, 11876408, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
+    new DataRequest(11876408, 11882733, 0, 0).open('GET', '/preserved_derived_types.xml');
+    new DataRequest(11882733, 13848721, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
+    new DataRequest(13848721, 14723693, 0, 0).open('GET', '/Resources/unity_default_resources');
+    new DataRequest(14723693, 14751318, 0, 0).open('GET', '/Managed/mono/2.0/machine.config');
 
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
@@ -3625,10 +3625,10 @@ Module['FS_createPath']('/Managed/mono', '2.0', true, true);
           DataRequest.prototype.requests["/Il2CppData/Metadata/global-metadata.dat"].onload();
           DataRequest.prototype.requests["/Resources/unity_default_resources"].onload();
           DataRequest.prototype.requests["/Managed/mono/2.0/machine.config"].onload();
-          Module['removeRunDependency']('datafile_myGame.data');
+          Module['removeRunDependency']('datafile_NightmareFleshStackBuild-local.data');
 
     };
-    Module['addRunDependency']('datafile_myGame.data');
+    Module['addRunDependency']('datafile_NightmareFleshStackBuild-local.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
