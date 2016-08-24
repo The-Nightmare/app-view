@@ -16,8 +16,8 @@ angular
         password: password
       },
 
-      // url: 'https://thenightmarespringserver.herokuapp.com/player'
-      url: 'http://localhost:3000/auth/signup'
+      url: 'https://nightmare-server.herokuapp.com/auth/signup'
+      // url: 'http://localhost:3000/auth/signup'
     }).then(function successCallback(response) {
         console.log('win', response);
         loginService.loginUser(userName, password);
