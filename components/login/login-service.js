@@ -17,7 +17,7 @@
       return user.token;
     }
     function getUserId(){
-      return user.userId
+      return user.userId;
     }
     function loginUser(userName, password) {
       $http({
