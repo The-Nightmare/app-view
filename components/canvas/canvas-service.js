@@ -38,7 +38,7 @@
             Authorization: 'Bearer ' + loginService.getToken()
           },
           // url: 'http://localhost:3000/api/' + loginService.getUserId()
-          url: 'https://nightmare-server.herokuapp.com/api' + loginService.getUserId()
+          url: 'https://nightmare-server.herokuapp.com/api/' + loginService.getUserId()
         }).then(function successCallback(response) {
           deferred.resolve(response.data);
         }, function errorCallback(err) {
