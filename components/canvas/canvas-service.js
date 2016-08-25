@@ -19,7 +19,7 @@
           },
 
           // url: 'http://localhost:3000/api'
-          url: 'https://nightmare-server.herokuapp.com/api'
+          url: 'https://nightmare-server.herokuapp.com/api' + loginService.getUserId();
 
         }).then(function successCallback(response) {
            deferred.resolve(response.data.score);
